@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="styling.css">
+		<title>Todora</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Todora</h1>
+			<p style="opacity: 0;">Willkommen bei Todora! Sie haben noch keine ToDo-Zettel angelegt.</p>
+			<button type="button" class="new">Neuer Zettel</button>
+		</header>
+			
+		<div class="col-md-4">
+			<h2 contenteditable="true">Einkaufsliste</h2>
+			<h3> (2/3)</h3>
+			<div class="bg">
+				<div class="progress" style="width: 66.6667%;"></div>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th><input type="checkbox"></th>
+						<th><p class="ongoing" contenteditable="true">Wasser</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+					<tr>
+						<th><input type="checkbox" checked></th>
+						<th><p class="finished" contenteditable="true">Hummus</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+					<tr>
+						<th><input type="checkbox" checked></th>
+						<th><p class="finished" contenteditable="true">Paprika</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+				</table>
+			</div>
+			<button class="delete">Löschen</button>
+			<button class="add">Hinzufügen</button>
+		</div>
+		<div class="col-md-4">
+			<h2 contenteditable="true">Tätigkeiten</h2>
+			<h3> (1/2)</h3>
+			<div class="bg">
+				<div class="progress" style="width: 50%;"></div>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th><input type="checkbox"></th>
+						<th><p class="ongoing" contenteditable="true">Sport</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+					<tr>
+						<th><input type="checkbox" checked></th>
+						<th><p class="finished" contenteditable="true">Webentwicklung Übung 3</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+				</table>
+			</div>
+			<button class="delete">Löschen</button>
+			<button class="add">Hinzufügen</button>
+		</div>
+		<div class="col-md-4">
+			<h2 contenteditable="true">Leerer Zettel</h2>
+			<h3> (0/1)</h3>
+			<div class="bg">
+				<div class="progress"></div>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<th><input type="checkbox"></th>
+						<th><p class="ongoing" contenteditable="true">Leerer Eintrag</p></th>
+						<th><button class="delRow">X</button></th>
+					</tr>
+				</table>
+			</div>
+			<button class="delete">Löschen</button>
+			<button class="add">Hinzufügen</button>
+		</div>
+	</body>
+		
+</html>
